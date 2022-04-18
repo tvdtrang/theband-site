@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+
+}
+#header{
+    height: 46px;
+    width: 100%;    
+    background-color: #000;
+    box-sizing: border-box;
+    display: block;
+    font-size: 15px;
+    /* line-height: 22.5px; */
+    position: fixed;
+    top:0;
+}
+#nav{
+    display: inline-block;
+}
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+#nav>li>a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav >  li:hover > a{
+    color:#000;
+    background-color: #ccc;
+}
+
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    min-width: 160px;
+    top: 100%;
+    left:0;
+    /* width: 160px;  */
+     /* min-width:---> Lỗi Bài 8 - Navigation CSS */
+}
+
+#nav .subnav a{
+    color: #000;
+    padding: 0px 12px;
+    line-height: 22.5px;
+}
+
+#nav .subnav li:hover{
+    background-color: #ccc;
+    display: block;
+}
+
+#header .search-button{
+    float: right;
+    padding: 0 23.5px;
+    align-items: center;
+}
+
+#header .search-button:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+#header .search-icon{
+    color:#fff;
+    font-size: 15px;
+    line-height: 46px;
+    
+}
+
+#nav .nav-arrow{
+    font-size: 15px;
+    align-items: center;
+}
+
+#slider{
+    min-height: 500px;
+    background-color: rgb(255, 213, 213);
+    /* display: none; */
+    margin-top: 46px;
+}
+.content{
+    height: 1000px;
+    background-color: #ccc;
+}
+#about{
+
+}
+#tour{
+
+}
+#contact{
+
+}
+#footer{
+   
+}
+
